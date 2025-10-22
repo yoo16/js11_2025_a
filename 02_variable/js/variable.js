@@ -21,8 +21,12 @@ itemName = "紅茶"
 // TODO: 商品名をコンソール表示
 // clg
 console.log(itemName)
+// もしブラウザを読み込んでも表示できない人
+// Win: Ctrl + Shif + R
+// Mac: Cmd + Shift + R
 
 // TODO: 価格, 個数, 割引
+console.log(price, quantity, discount);
 
 // TODO: 商品名をHTML表示
 document.getElementById("item-name").innerHTML
