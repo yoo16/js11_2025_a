@@ -3,9 +3,11 @@
 var itemName = "コーヒー"
 // スネークケース
 // var item_name = "コーヒー"
+// let itemName = "コーヒー"
 
 // TODO: 変数定義 価格「price」
 var price = 450
+// var kakaku = 450
 
 // TODO: 変数定義 個数「quantity」
 var quantity = 3
