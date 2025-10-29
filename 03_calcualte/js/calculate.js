@@ -18,9 +18,13 @@ var discount = 0;
 quantity++
 // quantity = quantity + 1
 
-quantity++
-quantity++
 quantity--
+// quantity = quantity - 1
+
+// 現状: quantity = 2
+// 複合演算: 3個増やす
+quantity += 3
+
 
 // TODO: 小計金額計算: subTotalPrice:価格 x 個数
 subTotalPrice = price * quantity
