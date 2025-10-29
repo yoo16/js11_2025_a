@@ -11,7 +11,7 @@ var subTotalPrice = 0;
 var totalPrice = 0;
 var taxWithoutPrice = 0;
 var tax = 0;
-var isMember = true
+var isMember = true  // 会員フラグ
 var discount = 0;
 
 // TODO: 個数 quantity を増減
