@@ -15,6 +15,12 @@ var isMember = true
 var discount = 0;
 
 // TODO: 個数 quantity を増減
+quantity++
+// quantity = quantity + 1
+
+quantity++
+quantity++
+quantity--
 
 // TODO: 小計金額計算: subTotalPrice:価格 x 個数
 subTotalPrice = price * quantity
