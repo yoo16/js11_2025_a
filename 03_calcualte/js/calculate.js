@@ -62,5 +62,8 @@ var orderNo = 20341;
 // var orderCode = tableNo + orderNo
 var orderCode = tableNo + '-' + orderNo
 
+// テンプレートリテラル: バッククォートで囲む
+orderCocde = `${tableNo}-${orderNo}`
+
 // TODO: オーダーコード生成（テキスト連結） xx-xxxx 形式
 document.getElementById('order-code').innerHTML = orderCode;
