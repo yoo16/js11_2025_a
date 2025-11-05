@@ -55,13 +55,13 @@ document.getElementById("calc2").textContent = calculate(71)
 // 無名関数
 // ==============================
 // TODO: 無名関数 hello1 を定義
-// var hello1 = function (name) {
-//     var message = name + "さん、いらっしゃい";
-//     return message;
-// };
+var hello1 = function (name) {
+    var message = name + "さん、いらっしゃい";
+    return message;
+};
 
 // TODO: hello1 を使って表示
-document.getElementById("hello1").textContent;
+document.getElementById("hello1").textContent = hello1("HAL東京");
 
 // ==============================
 // アロー関数
