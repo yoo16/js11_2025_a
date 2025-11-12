@@ -72,10 +72,11 @@ let trash = ""
 
 // switch statement
 // sw と入力して switch statement を選択
-weekday = "木"
+weekday = "金"
 
 switch (weekday) {
     case "月":
+    case "金":
         trash = "燃えるゴミ"
         break;
     case "木":
