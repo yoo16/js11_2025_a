@@ -48,10 +48,13 @@ let message2 = ""
 // 2. money が price 以上 の時に "決済完了"
 // 3. それ以外 の時に "残高不足"
 
-price = -500
+price = 5000
+money = 1000
 // ife
 if (price < 0) {
     message2 = "価格エラー"
+} else if (price > money) {
+    message2 = "残高不足"
 } else {
     message2 = "決済完了"
 }
