@@ -70,4 +70,18 @@ let trash = ""
 // 2. 木曜日 の時に 燃えないゴミ
 // 3. それ以外 の時に 回収なし
 
+// switch statement
+// sw と入力して switch statement を選択
+weekday = "木"
+
+switch (weekday) {
+    case "月":
+        trash = "燃えるゴミ"
+        break;
+
+    default:
+        trash = "回収なし"
+        break;
+}
+
 addRow(`曜日(${weekday})`, trash)
