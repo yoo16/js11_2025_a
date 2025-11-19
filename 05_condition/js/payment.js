@@ -123,6 +123,8 @@ function handlePayment() {
         showStatus("残高不足です。チャージしてください。")
         // 処理を中断
         return;
+    } else {
+        // 他の決済の場合は、決済代行会社に問い合わせて承認を得る処理が入る想定
     }
 
     showStatus("決済処理中です...");
