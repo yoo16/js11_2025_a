@@ -12,8 +12,8 @@ const audioFanfare = document.getElementById("fanfare");
 // オーディオ再生フラグ（未使用）
 const isAudioPlay = true;
 // オーディオ音量設定
-audioBeep.volume = 0.1;
-audioFanfare.volume = 0.1;
+audioBeep.volume = 0.5;
+audioFanfare.volume = 0.5;
 
 // ===========================
 // 固定請求額
@@ -147,7 +147,8 @@ function completePayment() {
     // TODO :決済完了ファンファーレ再生
     // isAudioPlay=true の時: audioFanfare.play()
     if (isAudioPlay) {
-        audioFanfare.play();
+        // audioFanfare.play();
+        audioBeep.play();
     }
 
     // 決済完了メッセージ表示
