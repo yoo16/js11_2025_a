@@ -71,9 +71,9 @@ function selectMethod(methodKey) {
 
     switch (selectedMethod) {
         case "cash":
+            // 現金入力欄を表示: class = hidden を削除
             cashArea.classList.remove("hidden");
             break;
-    
         default:
             break;
     }
