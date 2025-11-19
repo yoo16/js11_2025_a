@@ -14,6 +14,13 @@ for (let index = 1; index <= 100; index++) {
     sum += index;
 }
 
+// Python だとこう書く
+/*
+sum = 0
+for index in range(1, 101):
+    sum += index
+print(sum)
+
 // 合計を表示
 console.log(sum);
 
