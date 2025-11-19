@@ -7,7 +7,12 @@
 let sum = 0;
 
 // TODO: for Loop : 合計を計算: sum = sum + index の複合演算
-
+// for と入力して、For Loop を選択
+// 1 から 100 まで繰り返し: 1 以上 100 以下
+for (let index = 1; index <= 100; index++) {
+    // sum に index を足す
+    sum += index;
+}
 
 // 合計を表示
 console.log(sum);
