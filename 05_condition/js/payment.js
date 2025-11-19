@@ -118,6 +118,12 @@ function handlePayment() {
     // 現金だけ残高チェック
     // selectedMethod=cash かつ money < PAYMENT_AMOUNT 
     // : 残高不足です。チャージしてください。
+    // かつ = AND = &&
+    if (selectedMethod == "cash" && money < PAYMENT_AMOUNT) {
+        showStatus("残高不足です。チャージしてください。")
+        // 処理を中断
+        return;
+    }
 
     showStatus("決済処理中です...");
     // TODO ビープ音再生
