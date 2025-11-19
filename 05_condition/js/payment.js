@@ -12,13 +12,14 @@ const audioFanfare = document.getElementById("fanfare");
 // オーディオ再生フラグ（未使用）
 const isAudioPlay = true;
 // オーディオ音量設定
-audioBeep.volume = 0.1;
-audioFanfare.volume = 0.1;
+// audioBeep.volume = 0.1;
+// audioFanfare.volume = 0.1;
 
 // ===========================
 // 固定請求額
 // ===========================
 const PAYMENT_AMOUNT = 1500;
+// 現金所持金
 let money = 0;
 
 // 選択された決済方法
@@ -67,6 +68,15 @@ function selectMethod(methodKey) {
     // 1. 現金(cash) の時に cashArea を表示
     // 2. QR決済(qr) の時に showQrCode() を実行し、qrArea を表示
     // 3. 他の決済方法の時は特に表示なし
+
+    switch (selectedMethod) {
+        case "cash":
+            cashArea.classList.remove("hidden");
+            break;
+    
+        default:
+            break;
+    }
 
 }
 
