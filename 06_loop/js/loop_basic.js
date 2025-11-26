@@ -28,9 +28,15 @@ console.log(sum);
 /**
  * while
  */
-var num = 0;
+let num = 0;
 // TODO: While Statement 
 // 1) num が 10 以下だったらずっと繰り返し
 // 2) 10 までの偶数(even number)を表示
 // 3) 7 だったらループを終了
 // 4) num を １ 増やす
+
+while (num <= 10) {
+    
+    // num を１増やす
+    num++
+}
