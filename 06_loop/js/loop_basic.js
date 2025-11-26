@@ -36,7 +36,10 @@ let num = 0;
 // 4) num を １ 増やす
 
 while (num <= 10) {
-    
+    // 2で割った余りが 0 なら偶数
+    if (num % 2 == 0) {
+        console.log(num);
+    }
     // num を１増やす
     num++
 }
