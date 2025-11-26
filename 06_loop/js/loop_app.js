@@ -7,6 +7,10 @@ const maxAge = 100;
 
 // TODO: 年齢プルダウン作成
 // for文 で addOptionTag() を繰り返し : minAge から maxAge まで
+for (let index = minAge; index <= maxAge; index++) {
+    // optionタグ追加関数 呼び出し​
+    addOptionTag(index);
+}
 
 // デフォルト年齢を選択状態にする​
 ageSelect.value = defaultAge;
