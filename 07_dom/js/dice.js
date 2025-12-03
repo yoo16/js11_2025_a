@@ -131,10 +131,10 @@ showMessage(initMessage);
 createDiceImages();
 
 // TODO: サイコロの初期表示: 1の目
-diceContainer.innerHTML= '<span class="text-7xl">1</span>'
+diceContainer.innerHTML = '<span class="text-7xl">1</span>'
 
 // TODO: 1のサイコロ画像を表示: innerHTML: diceImages[1] を代入
-
+diceContainer.innerHTML = diceImages[1];
 
 // ボタンクリックイベント
 btnRoll.addEventListener('click', rollDice);
