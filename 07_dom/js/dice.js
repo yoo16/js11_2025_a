@@ -69,6 +69,7 @@ const rollDice = () => {
         number = randomNumber(1, 6);
         // TODO: サイコロの目の表示更新
         // diceContainer.innerHTML = number
+        // diceContainer.textContent = `<span class="text-7xl">${number}</span>`
         diceContainer.innerHTML = `<span class="text-7xl">${number}</span>`
 
         // TODO: diceImages 配列から、number 番目のSVG画像を取り出して表示: innerHTML
