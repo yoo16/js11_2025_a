@@ -3,6 +3,9 @@
 const diceContainer = document.getElementById('dice-container');
 const btnRoll = document.getElementById('btn-roll');
 
+// diceContainer の確認
+console.log(diceContainer);
+
 // サイコロの目（数値はランダムに変更される）
 let number = 1;
 
@@ -20,6 +23,7 @@ const dotPositions = {
 };
 
 // TODO: タイトル設定: id=title を textContent で設定
+document.getElementById('title').textContent = "Dice App"
 
 /**
  * ランダムな整数 (min 〜 max)
