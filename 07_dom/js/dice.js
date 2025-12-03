@@ -64,6 +64,8 @@ const rollDice = () => {
 
     // TODO: アニメーション開始
     // animate-shake クラスを diceContainer に追加: classList.add()
+    diceContainer.classList.add('animate-shake')
+    // <div class="animate-shake"></div> 
 
     const timer = setInterval(() => {
         // ランダムなサイコロの目を生成
