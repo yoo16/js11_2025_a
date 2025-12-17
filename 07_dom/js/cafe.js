@@ -89,9 +89,11 @@ function switchBackground() {
             copyElement.classList.add("text-white");
 
             // TODO: backgroundImageの src 更新
-            // images[imageIndex] を代入
+            // image.src を代入
+            backgroundImage.src = image.src
 
             // TODO: backgroundImage のフェードイン: style.opacity = 1
+            backgroundImage.style.opacity = 1
         }, fadeInTime);
     };
 }
