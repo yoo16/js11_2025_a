@@ -40,6 +40,7 @@ function animationText(text) {
         // TODO: class=fade-in を設定: classList.add()
 
         // TODO: copyElement に spanタグを追加: appendChild()
+        copyElement.appendChild(span)
 
         // 文字インデックスを増やす
         index++;
