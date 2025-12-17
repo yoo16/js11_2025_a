@@ -13,7 +13,7 @@ const animationTextDelay = 200;
 // 背景画像のフェードイン時間
 const fadeInTime = 1000;
 // 背景画像の切り替え時間
-const backgroundSwitchTime = 3000;
+const backgroundSwitchTime = 5000;
 
 // キャッチコピーのElement: parent
 const copyElement = document.getElementById('copy');
