@@ -35,6 +35,7 @@ function animationText(text) {
         // spanタグに文字をいれる
         // span.textContent = text
         // TODO: spanに、text の index番目の文字を設定
+        span.textContent = text[index]
 
         // TODO: class=fade-in を設定: classList.add()
 
