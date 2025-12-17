@@ -15,7 +15,7 @@ const fadeInTime = 1000;
 // 背景画像の切り替え時間
 const backgroundSwitchTime = 3000;
 
-// キャッチコピーのElement
+// キャッチコピーのElement: parent
 const copyElement = document.getElementById('copy');
 // 背景画像のElement
 const backgroundImage = document.getElementById('background-image');
@@ -29,7 +29,9 @@ function animationText(text) {
     let index = 0;
     function displayNextChar() {
         // TODO: spanタグ作成 createElement()
-        let span = {}
+        let span = document.createElement('span')
+        // <span></span>
+
         // spanタグに文字をいれる
         // span.textContent = text
         // TODO: spanに、text の index番目の文字を設定
