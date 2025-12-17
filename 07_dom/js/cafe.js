@@ -38,6 +38,7 @@ function animationText(text) {
         span.textContent = text[index]
 
         // TODO: class=fade-in を設定: classList.add()
+        span.classList.add('fade-in')
 
         // TODO: copyElement に spanタグを追加: appendChild()
         copyElement.appendChild(span)
