@@ -47,7 +47,11 @@ function animationText(text) {
         if (index < text.length) {
             // TODO: 現在の文字インデックスが、文字数より小さければ、アニメーションテキスト継続
             // setTimeout() を使って displayNextChar() を animationTextDelay 後に実行
-
+            // sett と入力して set timeout function を補完してもよい
+            setTimeout(() => {
+                // 次の文字を表示
+                displayNextChar()
+            }, 300);
         } else {
             // 初回背景画像表示
             switchBackground();
