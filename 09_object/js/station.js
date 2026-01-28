@@ -16,8 +16,8 @@ let currentStation = {
 // furigana: ゆうらくちょう
 
 // TODO: 駅名表示
-current.textContent = ""
-furigana.textContent = ""
+current.textContent = currentStation.name
+furigana.textContent = currentStation.furigana
 
 // 連想配列の配列
 let stations = [
