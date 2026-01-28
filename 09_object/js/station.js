@@ -25,7 +25,7 @@ currentStation.furigana = "ゆうらくちょう"
 current.textContent = currentStation.name
 furigana.textContent = currentStation.furigana
 
-// 連想配列の配列
+// ディクショナリー（辞書型配列）
 let stations = [
     { name: "東京", furigana: "とうきょう", },
     { name: "有楽町", furigana: "ゆうらくちょう", },
