@@ -2,6 +2,9 @@
 const padZero = (number) => {
     return number.toString().padStart(2, '0');
 }
+// function padZero(number) {
+//     return number.toString().padStart(2, '0');
+// }
 
 // 現在の年月日と時刻を表示する関数
 function updateTime() {
@@ -10,12 +13,13 @@ function updateTime() {
     const dateElement = document.getElementById("date");
 
     // TODO: 現在の日時を取得
-    const now = {};
+    const now = new Date();
 
     // TODO: 日時の値を取得
-    const year = "";
-    const month = "";
-    const day = "";
+    const year = now.getFullYear();
+    // 月は0から始まるため+1
+    const month = now.getMonth() + 1;
+    const day = now.getDate();
 
     // TODO: 時刻を取得し、padZero() でゼロパディング
     const hours = "";
