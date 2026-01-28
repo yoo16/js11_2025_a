@@ -34,11 +34,13 @@ let stations = [
 
 console.log(stations)
 
-// 現在の駅名表示
+// 現在の駅名取得 index: 1 のオブジェクトを取得
 currentStation = stations[1]
 
 // TODO: 現在の駅名表示
 // TODO: 現在のふりがな表示
+current.textContent = currentStation.name
+furigana.textContent = currentStation.furigana
 
 // TODO:前の駅名表示: 配列を使って
 prev.innerHTML = ""
