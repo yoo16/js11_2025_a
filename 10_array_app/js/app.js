@@ -19,6 +19,7 @@ let prevStationIndex = getPrevStationIndex();
 function updateStation() {
     // 現在の駅
     // TODO: 配列「stations」から、現在のインデックス「currentStationIndex」で、駅（連想配列）を取得
+    const station = stations[currentStationIndex];
 
     // TODO: 現在の駅名表示
 
