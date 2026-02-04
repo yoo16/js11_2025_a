@@ -47,7 +47,7 @@ function updateStation() {
  */
 function getStationIndexById(id) {
     //  TODO: 駅のID から インデックス取得
-    // return stations.findIndex(station => station.id === id);
+    return stations.findIndex(station => station.id === id);
 }
 
 /**
@@ -56,7 +56,7 @@ function getStationIndexById(id) {
  */
 function getNextStationIndex() {
     // TODO: 現在のインデックス + 1 を、配列の要素数で割った余りを返す
-    // return (currentStationIndex + 1) % stations.length;
+    return (currentStationIndex + 1) % stations.length;
 }
 
 /**
@@ -65,7 +65,7 @@ function getNextStationIndex() {
  */
 function getPrevStationIndex() {
     // TODO: 現在のインデックス - 1 を、配列の要素数で割った余りを返す
-    // return (currentStationIndex - 1 + stations.length) % stations.length;
+    return (currentStationIndex - 1 + stations.length) % stations.length;
 }
 
 /**
