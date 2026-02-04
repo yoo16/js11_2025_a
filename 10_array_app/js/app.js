@@ -20,6 +20,11 @@ function updateStation() {
     // 現在の駅
     // TODO: 配列「stations」から、現在のインデックス「currentStationIndex」で、駅（連想配列）を取得
     const station = stations[currentStationIndex];
+    // オブジェクトの繰り返し
+    // forin
+    // for (const key in station) {
+    //     alert(station[key])
+    // }
 
     // TODO: 現在の駅名表示
     currentName.textContent = station.name
