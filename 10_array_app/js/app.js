@@ -28,6 +28,7 @@ function updateStation() {
     currentFurigana.textContent = station.furigana
 
     // TODO: ハイライトを一旦全て外す: class="station"
+    // class="station" を持つ要素を全て取得してループ
     document.querySelectorAll('.station').forEach(stationElement => {
         stationElement.classList.remove('bg-green-700');
     });
