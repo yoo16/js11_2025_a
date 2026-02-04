@@ -22,8 +22,10 @@ function updateStation() {
     const station = stations[currentStationIndex];
 
     // TODO: 現在の駅名表示
+    currentName.textContent = station.name
 
     // TODO: 現在の駅名（ふりがな）表示
+    currentFurigana.textContent = station.furigana
 
     // TODO: ハイライトを一旦全て外す: class="station"
     // document.querySelectorAll('.station').forEach(stationElement => {
@@ -36,10 +38,12 @@ function updateStation() {
     // 次の駅のインデックス
     nextStationIndex = getNextStationIndex();
     // TODO: インデックスから駅名表示: nextButton
+    nextButton.textContent = stations[nextStationIndex].name;
 
     // 前の駅のインデックス
     prevStationIndex = getPrevStationIndex();
     // TODO: インデックスから駅名表示: prevButton
+    prevButton.textContent = stations[prevStationIndex].name;
 }
 
 /**
