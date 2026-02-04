@@ -30,10 +30,12 @@ function updateStation() {
     // TODO: ハイライトを一旦全て外す: class="station"
     // class="station" を持つ要素を全て取得してループ
     document.querySelectorAll('.station').forEach(stationElement => {
+        // class="bg-green-700" を外す
         stationElement.classList.remove('bg-green-700');
     });
 
     // TODO: 駅名ハイライト: id="station-${station.id}"
+    // id=station-駅ID を持つ要素を取得してハイライトを追加
     document.querySelector(`#station-${station.id}`).classList.add('bg-green-700');
 
     // 次の駅のインデックス
