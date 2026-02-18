@@ -43,15 +43,26 @@ const changeMsg = document.querySelector('#change-msg span');
 
 // TODO: change イベントの処理を実装: addEventListener('change', function(event) {})
 // 選択された値を取得
-selectLang.addEventListener('change', (event) => {
-    // event.target = 自分自身の要素（selectLang）
+// selectLang.addEventListener('change', (event) => {
+//     // event.target = 自分自身の要素（selectLang）
+//     const selectedValue = event.target.value
+//     if (selectedValue) {
+//         changeMsg.textContent = selectedValue;
+//     } else {
+//         changeMsg.textContent = '未選択';
+//     }
+// })
+
+selectLang.addEventListener('change', langChangeHandler)
+
+const langChangeHandler = (event) => {
     const selectedValue = event.target.value
     if (selectedValue) {
         changeMsg.textContent = selectedValue;
     } else {
         changeMsg.textContent = '未選択';
     }
-})
+}
 
 // 5. Submitイベント
 // フォーム送信時にページがリロードされるのを防ぎ、カスタム処理を行う
