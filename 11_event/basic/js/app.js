@@ -15,6 +15,10 @@ const inputText = document.getElementById('input-text');
 const inputMsg = document.querySelector('#input-msg span');
 
 // TODO: inputイベントの処理を実装: addEventListener('input', function(event) {
+inputText.addEventListener('input', (event) => {
+    // event.target = 自分自身の要素（inputText）
+    inputMsg.textContent = event.target.value
+})
 
 // 3. Mouseover/Mouseoutイベント
 // マウスが要素に乗った時、離れた時に色を変える
