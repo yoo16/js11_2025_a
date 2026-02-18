@@ -6,7 +6,7 @@ const clickMsg = document.getElementById('click-msg');
 // TODO: clickイベントの処理を実装: addEventListener('click', function(event) {})
 btnClick.addEventListener('click', () => {
     clickMsg.textContent = 'くりっくしたよ！';
-    clickMsg.classList.add('text-blue-600', 'font-bold');
+    clickMsg.classList.add('text-red-600', 'font-bold');
 })
 
 // 2. Inputイベント
