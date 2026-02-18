@@ -73,10 +73,13 @@ const formMsg = document.getElementById('form-msg');
 // ページのリロード（既定の動作）をキャンセル
 // event.preventDefault();
 
-// 名前の取得
-const name = document.getElementById('form-name').value;
-formMsg.textContent = `${name}さん、送信ありがとうございます！`;
-formMsg.classList.remove('hidden');
+selectLang.addEventListener('submit', (event) => {
+    // 名前の取得
+    const name = document.getElementById('form-name').value;
+    formMsg.textContent = `${name}さん、送信ありがとうございます！`;
+    formMsg.classList.remove('hidden');
 
-// 入力をクリア
-sampleForm.reset();
+    // 入力をクリア
+    sampleForm.reset();
+})
+
