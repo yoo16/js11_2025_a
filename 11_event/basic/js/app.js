@@ -85,5 +85,6 @@ sampleForm.addEventListener('submit', (event) => {
     sampleForm.reset();
 
     // TODO: サーバサイドにデータを送る処理を実装（例: fetch API）
+    // await fetch('APIのURL');
 })
 
