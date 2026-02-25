@@ -49,11 +49,11 @@ function renderProducts() {
 function addToCart(id) {
     console.log(id)
     // TODO: find() を使って idで商品を特定
-    const product = [];
+    const product = products.find(p => p.id === parseInt(id))
     if (!product) return;
 
     // TODO: find() を使って すでにカートにあるか確認
-    const item = [];
+    const item = cart.find(i => i.id === product.id);
 
     if (item) {
         // すでにカートに存在する場合は数量を増やす
