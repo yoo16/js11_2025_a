@@ -114,7 +114,8 @@ function calculateTotal() {
 // カート保存
 function saveCart() {
     // LocalStorageに保存
-    localStorage.setItem('shop_cart', JSON.stringify(cart));
+    const json = JSON.stringify(cart);
+    localStorage.setItem('shop_cart', json);
     updateCartUI();
 }
 
