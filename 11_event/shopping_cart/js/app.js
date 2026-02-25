@@ -124,9 +124,11 @@ function calculateTotal() {
 
 // カート保存
 function saveCart() {
-    // TODO: JSON.stringify()でオブジェクトを文字列に変換
+    // JSON.stringify()でオブジェクトを文字列に変換
     const json = JSON.stringify(cart);
     // TODO:LocalStorageに保存: localStorage.setItem('shop_cart', json);
+    localStorage.setItem('shop_cart', json)
+
     updateCartUI();
 }
 
