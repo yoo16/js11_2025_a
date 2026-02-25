@@ -126,13 +126,13 @@ function toggleCart() {
 }
 
 // API でJSONデータの読み込み
-async function fetchProducts() {
-    try {
-        const response = await fetch('api/products.json');
-        if (!response.ok) throw new Error('Network response was not ok');
-        products = await response.json();
-    } catch (error) {
-        console.error('Fetch error:', error);
-        grid.innerHTML = '<p class="text-center py-10">商品データの読み込みに失敗しました。</p>';
-    }
-}
+// async function fetchProducts() {
+//     try {
+//         const response = await fetch('api/products.json');
+//         if (!response.ok) throw new Error('Network response was not ok');
+//         products = await response.json();
+//     } catch (error) {
+//         console.error('Fetch error:', error);
+//         grid.innerHTML = '<p class="text-center py-10">商品データの読み込みに失敗しました。</p>';
+//     }
+// }
