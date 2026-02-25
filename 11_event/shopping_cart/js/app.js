@@ -31,11 +31,14 @@ function renderProducts() {
         </div>
     `).join('');
 
-    // TODO: カートボタンの取得
-    const cartButtons = [];
+    // TODO: カートボタン取得: class="cart-btn" を持つ要素を全て取得
+    const cartButtons = document.querySelectorAll('cart-btn')
 
     cartButtons.forEach(btn => {
         // TODO: カートボタンのクリックイベント
+        btn.addEventListener('click', () => {
+            
+        })
         // TODO: HTMLの data-id 属性から値を取り出す
         // TODO: addToCart(id)を呼び出す
     });
