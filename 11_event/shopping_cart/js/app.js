@@ -36,11 +36,12 @@ function renderProducts() {
 
     cartButtons.forEach(btn => {
         // TODO: カートボタンのクリックイベント
-        btn.addEventListener('click', () => {
-            
+        btn.addEventListener('click', (event) => {
+            // TODO: HTMLの data-id 属性から値を取り出す
+            const id = btn.dataset.id
+            // TODO: addToCart(id)を呼び出す
+            addToCart(id)
         })
-        // TODO: HTMLの data-id 属性から値を取り出す
-        // TODO: addToCart(id)を呼び出す
     });
 }
 
