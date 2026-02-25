@@ -1,35 +1,35 @@
 // グローバル変数
 let cart = fetchCart();
-
+// DOM要素の取得
 const grid = document.getElementById('product-grid');
 const cartList = document.getElementById('cart-items');
 const count = document.getElementById('cart-count');
 const total = document.getElementById('cart-total');
 const cartDrawer = document.getElementById('cart-drawer');
 
-// TODO: 初期化処理
-// document.addEventListener('DOMContentLoaded', async () => {
-//     renderProducts();     // 商品表示
-//     updateCartUI();       // カートUI更新
-// });
+// TODO: 初期化処理: HTMLの読み込みが完了したら
+document.addEventListener('DOMContentLoaded', async () => {
+    renderProducts();     // 商品表示
+    updateCartUI();       // カートUI更新
+});
 
 // 商品一覧の描画
 function renderProducts() {
     // TODO: map() を使って商品一覧を表示
-    // grid.innerHTML = products.map(p => `
-    //     <div class="group bg-white p-4 rounded-xl shadow-sm">
-    //         <div class="aspect-square overflow-hidden rounded-lg bg-gray-200">
-    //             <img src="${p.image}" class="h-full w-full object-cover group-hover:opacity-75">
-    //         </div>
-    //         <div class="mt-4 flex justify-between">
-    //             <div>
-    //                 <h3 class="text-sm font-medium text-gray-700">${p.name}</h3>
-    //                 <p class="text-sm font-bold mt-1">¥${p.price.toLocaleString()}</p>
-    //             </div>
-    //             <button class="cart-btn bg-gray-100 p-2 rounded-full hover:bg-gray-200" data-id="${p.id}">＋</button>
-    //         </div>
-    //     </div>
-    // `).join('');
+    grid.innerHTML = products.map(p => `
+        <div class="group bg-white p-4 rounded-xl shadow-sm">
+            <div class="aspect-square overflow-hidden rounded-lg bg-gray-200">
+                <img src="${p.image}" class="h-full w-full object-cover group-hover:opacity-75">
+            </div>
+            <div class="mt-4 flex justify-between">
+                <div>
+                    <h3 class="text-sm font-medium text-gray-700">${p.name}</h3>
+                    <p class="text-sm font-bold mt-1">¥${p.price.toLocaleString()}</p>
+                </div>
+                <button class="cart-btn bg-gray-100 p-2 rounded-full hover:bg-gray-200" data-id="${p.id}">＋</button>
+            </div>
+        </div>
+    `).join('');
 
     // TODO: カートボタンの取得
     const cartButtons = [];
@@ -100,7 +100,7 @@ function fetchCart() {
     const item = [];
     if (item) {
         // JSON.parse()で文字列をオブジェクトに変換
-        return JSON.parse(item);
+        // return JSON.parse(item);
     } else {
         return [];
     }
